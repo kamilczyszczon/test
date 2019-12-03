@@ -1,0 +1,315 @@
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url(../fonts/ClearSans-Regular.ttf) format("truetype");
+  }
+*{
+    border:0;
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing: border-box;
+    font-family: "Myriad Pro", sans-serif;
+    text-decoration: none;
+    
+}
+html{
+    background-image: url("../images/pasek.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.home,
+.works {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+}
+.home {
+    background-image: url("../images/menu.png"), url("../images/bg.png") ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 27px, center 27px;
+    background-color: #b61717;
+}
+.works {
+    background-color: #280000;
+    background-image: url("../images/bg1-works.png");
+    background-position: center 27px;
+    background-repeat: no-repeat;
+}
+.works-content {
+    background-image: url("../images/bg2-works.png");
+    background-position: center 27px;
+    background-repeat: no-repeat;
+    max-width: 1900px;
+    margin: 0 auto;
+    overflow: auto;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 27px;
+    z-index: 5;
+    text-align: center;
+    background-color: #000000;
+}
+nav{
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 90px;
+    padding-top: 79px;
+    text-transform: uppercase;
+    z-index: 5;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 119px;
+    font-size: 20px;
+    padding: 0 5px 0 5px;
+    
+}
+nav ul li a {
+    color: #ffffff;
+    font-family: "Clear Sans";
+}
+nav ul li:hover{
+    color: #ff6a7f;
+    background-image: url("../images/active.png");
+    padding: 0 5px 0 5px;
+}
+nav ul li.active{
+    color: #ffffff;
+    background-image: url("../images/active.png");
+    padding: 0 5px 0 5px;
+}
+.home-content h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0.8;
+    margin-top:380px;
+    margin-left:21%;
+}
+.home-content h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 96px;
+    font-weight: 700;
+    opacity: 0.8;
+    margin-left:21%;
+}
+.home-content h1 span{
+    color: #000000;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.home-content h2 span{
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 700;
+    margin-left: 170px;
+}
+.works-content {
+    min-height: 500px;
+}
+.works-content h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top:235px;
+    margin-left: 149px;
+    width: 395px;
+    height: 169px;
+    padding-top: 68px;
+    padding-left: 80px;
+    font-size: 28px;
+    line-height: 24px;
+    color: #224540;
+}
+.works-content h1 span {
+    display: block;
+    margin-left: 75px;
+    color: #ffff;
+}
+.lang {
+    position: absolute;
+    width: 100%;
+    height: 27px;
+    z-index: 5;
+    text-align: right;
+    padding-right: 80px;
+    background-color: #000000;
+    padding-top: 3px;
+}
+.lang li{
+    display: inline-block;
+}
+.lang li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Clear Sans";
+    font-size: 14px;
+    margin-left: 10px;
+}
+.kropka{
+    width:13px;
+    height:13px;
+    text-indent:-5000px;
+    background-color:#ffffff;
+    border-radius: 13px;
+    position: absolute;
+    border: 1px solid #b61717;
+    opacity: 0.9;
+    top: 55px;
+    left: 99px;
+    animation-name: animationName; /* nazwa animacji, którą definiujemy poniżej */
+    animation-duration: 20s; /* dlugosc animacji - podobnie jak w transition */
+    animation-delay: 0s; /* ** - poczatkowe opóźnienie animacji - domyślnie 0s */
+    animation-iteration-count: 100; /* ** - liczba powtórzeń - konkretna liczba lub infinite, domyślnie 1 */
+    animation-direction: normal; /* ** - kierunek animacji - alternate, normal. Domyślnie jest normal. Alternate grane jest od początku do końca, a potem od końca do przodu. */
+    animation-timing-function: ease-out; /* ** - sposób animacji - ease, ease-in, ease-out, ease-in-out, linear, steps(4), frames(10) */
+    animation-fill-mode: none; /* ** - po skonczeniu animacji zaaplikuj style z danego kierunku - forwards, backwards, both, none */
+    
+}
+@keyframes animationName {
+    
+    0% {
+        top: -15px; left: -50px;
+        opacity: 0;
+    }
+    1% {
+        top: -15px; left: -50px;
+        opacity: 0.3;
+    }
+    2% {
+        top: 55px; left: 99px;
+        opacity: 1;
+    }
+    5% {
+        top: 269px; left: 95px; 
+        background-color: #b61717;
+    }
+    10% {
+        top: 661px; left: 309px;
+        background-color: #ffffff;
+    }
+    15% {
+        top: 746px; left: 506px; 
+        background-color: #b61717;
+    }
+    17% {
+        top: 832px; left: 705px; 
+        background-color: #ffffff;
+    }
+    19% {
+        top: 914px; left: 508px; 
+        background-color: #b61717;
+    }
+    21% {
+        top: 831px; left: 311px; 
+        background-color: #ffffff;
+    }
+    23% {
+        top: 746px; left: 506px; 
+        background-color: #b61717;
+    }
+    28% {
+        top: 691px; left: 953px; 
+        background-color: #ffffff;
+    }
+    32% {
+        top: 857px; left: 1348px; 
+        background-color: #b61717;
+    }
+    38% {
+        top: 802px; left: 1792px; 
+        background-color: #ffffff;
+    }
+    43% {
+        top: 716px; left: 1592px; 
+        background-color: #b61717;
+    }
+    45% {
+        top: 634px; left: 1790px; 
+        background-color: #ffffff;
+    }
+    47% {
+        top: 418px; left: 1794px; 
+        background-color: #b61717;
+    }
+    50% {
+        top: 25px; left: 1580px; 
+        background-color: #ffffff;
+    }
+    53% {
+        top: 418px; left: 1794px; 
+        background-color: #b61717;
+    }
+    55% {
+        top: 634px; left: 1790px; 
+        background-color: #ffffff;
+    }
+    57% {
+        top: 716px; left: 1592px; 
+        background-color: #b61717;
+    }
+    62% {
+        top: 802px; left: 1792px; 
+        background-color: #ffffff;
+    }
+    67% {
+        top: 857px; left: 1348px; 
+        background-color: #b61717;
+    }
+    72% {
+        top: 691px; left: 953px; 
+        background-color: #ffffff;
+    }
+    77% {
+        top: 746px; left: 506px; 
+        background-color: #b61717;
+    }
+    79% {
+        top: 831px; left: 311px; 
+        background-color: #ffffff;
+    }
+    81% {
+        top: 914px; left: 508px; 
+        background-color: #b61717;
+    }
+    83% {
+        top: 832px; left: 705px; 
+        background-color: #ffffff;
+    }
+    85% {
+        top: 746px; left: 506px; 
+        background-color: #b61717;
+    }
+    90% {
+        top: 661px; left: 309px;
+        background-color: #ffffff;
+    }
+    95% {
+        top: 269px; left: 95px; 
+        background-color: #b61717;
+    }
+    97% {
+        top: 55px; left: 99px;
+        opacity: 1;
+    }
+    100% {
+        top: -15px; left: -50px;
+        opacity: 0;
+    }
+}
